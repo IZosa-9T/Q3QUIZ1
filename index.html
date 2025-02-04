@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+	<title>QUIZ1: JavaScript Operators</title>
+</head>
+<body>
+
+<div class="container row">
+
+	<h1>JAVASCRIPT ( JS ) OPERATORS</h1>
+
+	<hr>
+
+	<p>Given : if a = 8.88 and b = 2.01, compute for the following :</p>
+
+	<hr>
+
+	<!-- a r i t h m e t i c -->
+
+	<div class="col-sm-4">
+		<h4>Arithmetic</h4>
+
+			<!-- e x p o n e n t s -->
+			<div>
+				<b>exponents :</b> a²
+				<p id="exponents"><b>answer :</b> </p>
+			</div>
+				<button type="button" class="btn" onclick="
+						var a=8.88;
+						var e=a**2 
+						// e = exponent answer
+						var round_e=e.toFixed(4);
+						document.getElementById('exponents').innerHTML='<b>answer :</b> ' + round_e">
+						view answer
+				</button>
+
+
+			<br/><br/>
+
+			<!-- m o d u l u s -->
+			<div>
+				<b>modulus :</b> a mod b
+				<p id="modulus"><b>answer :</b> </p>
+			</div>
+				<button type="button" class="btn" onclick="
+						var a=8.88;
+						var b=2.01
+						var m=a%b 
+						// m = modulus answer
+						var round_m=m.toFixed(1);
+						document.getElementById('modulus').innerHTML='<b>answer :</b> ' + round_m">
+						view answer
+				</button>
+	</div>
+
+	<div class="col-sm-4">
+
+		<h4>Comparison</h4>
+
+			<!-- t r u e -->
+			<div>
+				is <b>a</b> greater than <b>b</b>?
+				<p id="comparison"><b>answer :</b> </p>
+			</div>
+				<button type="button" class="btn" onclick="
+						var a=8.88;
+						var b=2.01
+						document.getElementById('comparison').innerHTML='<b>answer : </b>' + (a>b)">
+						view answer
+				</button>
+
+				<br/><br/>
+
+				<!-- f a l s e -->
+				<div>
+					is <b>a</b> equal <b>b</b>?
+					<p id="comparison2"><b>answer :</b> </p>
+				</div>
+					<button type="button" class="btn" onclick="
+							var a=8.88;
+							var b=2.01
+							document.getElementById('comparison2').innerHTML='<b>answer : </b>' + (a==b)">
+							view answer
+					</button>
+	</div>
+
+	<div class="col-sm-4">
+
+		<h4>Logical</h4>
+
+		<!-- t r u e -->
+		<div>
+			<b>true or false :</b> 
+			<p id="logical1">a ≤ b <b>and</b> a ≥ b</p>
+		</div>
+			<button type="button" class="btn" onclick="
+					var a=8.88;
+					var b=2.01
+					document.getElementById('logical1').innerHTML= (a <= b) && (a >= b)">
+					view answer
+			</button>
+
+		<br/><br/>
+
+		<!-- t r u e -->
+		<div>
+			<b>true or false :</b> 
+			<p id="logical2">a ≠ b <b>or</b> a = b</p>
+		</div>
+			<button type="button" class="btn" onclick="
+					var a=8.88;
+					var b=2.01
+					document.getElementById('logical2').innerHTML= (a != b) || (a == b)">
+					view answer
+			</button>
+			<br/><br/>
+		</div>
+
+	<!-- r e f r e s h    b u t t o n -->
+	<button type="button" class="btn refs" onClick="window.location.reload()">
+	      refresh
+	</button>
+</div>
+
+<div class="footer">
+	<p>Ivy A. Zosa | O.B. Montessori 9 - Topaz</p>
+</div>
+
+</body>
+</html>
